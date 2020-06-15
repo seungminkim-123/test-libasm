@@ -27,7 +27,7 @@ LINC = ar -rcs
 	${NASM} -lc -f macho64 $< -o $@
 
 $(NAME): ${OBJS}
-		${LINC} ${NAME} ${OBSJ}
+		${LINC} $(NAME) $(OBJS)
 
 all: $(NAME)
 
